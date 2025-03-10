@@ -27,12 +27,11 @@ const Total = ({ exercises }) => {
     <h3>Total exercises: {exercises[0] + exercises[1] + exercises[2]}</h3>
   )
 }
-
 const App = () => {
   const course = 'Half Stack application development'
   const parts = ['Fundamentals of React', 'Using props to pass data', 'State of a component'] //1
   const exercises = [10, 7, 14]
-
+  
   //2
   return (
     <div>
@@ -42,7 +41,7 @@ const App = () => {
 
 
       <Part name={parts[0]} exercises={exercises[0]} />
-
+      <p>===============================================</p>
     </div>
   )
 }
